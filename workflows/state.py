@@ -68,3 +68,9 @@ class KBState(TypedDict):
        - records (list[dict]): 每次调用的明细记录
            每项包含 provider, prompt_tokens, completion_tokens, total_tokens
     """
+
+    needs_human_review: bool
+    """是否需要人工介入。
+       当审核循环超过上限仍未通过时设为 True，
+       触发 HumanFlag 节点将数据写入 pending_review/ 目录。
+    """
