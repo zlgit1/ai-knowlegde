@@ -204,7 +204,7 @@ def score_tag_precision(data: dict) -> DimensionScore:
     valid = sum(1 for t in tags if isinstance(t, str) and t in STANDARD_TAGS)
 
     if total == 0:
-        return DimensionScore("标签精度", 0, 15, "无标签")
+        return DimensionScore("标签精度", 12, 15, "无标签")
 
     ratio = valid / total
     if 1 <= total <= 3:
