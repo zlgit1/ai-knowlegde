@@ -6,6 +6,11 @@ from typing import TypedDict
 class KBState(TypedDict):
     """知识工作流的状态，遵循"报告式通信"原则：字段存储结构化摘要而非原始数据。"""
 
+    plan: str
+    """当前工作流的任务描述或用户 query。
+       用于指导采集和分析的方向，也作为 Reviewer 审核时的参考上下文。
+    """
+
     sources: list[dict]
     """采集到的原始数据摘要列表，每项包含：
        - source (str): 数据来源标识（如 github-trending, hacker-news）

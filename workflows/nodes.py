@@ -15,7 +15,7 @@ from workflows.state import KBState
 from pipeline.model_client import get_provider, chat_with_retry
 
 
-def chat(prompt: str, system: str = "") -> tuple[str, dict]:
+def chat(prompt: str, system: str = "", **kwargs) -> tuple[str, dict]:
     """发送 prompt 给 LLM，返回 (text, usage)。"""
     provider = get_provider()
     try:
@@ -23,7 +23,8 @@ def chat(prompt: str, system: str = "") -> tuple[str, dict]:
         if system:
             messages.append({"role": "system", "content": system})
         messages.append({"role": "user", "content": prompt})
-        response = chat_with_retry(provider, messages, temperature=0.3)
+        temperature = kwargs.pop("temperature", 0.3)
+        response = chat_with_retry(provider, messages, temperature=temperature)
         return response.content, {
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,
@@ -33,14 +34,14 @@ def chat(prompt: str, system: str = "") -> tuple[str, dict]:
         provider.close()
 
 
-def chat_json(prompt: str, system: str = "") -> tuple[Any, dict]:
+def chat_json(prompt: str, system: str = "", **kwargs) -> tuple[Any, dict]:
     """发送 prompt 给 LLM 并解析 JSON 响应，返回 (parsed_json, usage)。"""
     sys_prompt = (
         (system + "\nYou must respond with valid JSON only, no other text.")
         if system else
         "You must respond with valid JSON only, no other text."
     )
-    text, usage = chat(prompt, system=sys_prompt)
+    text, usage = chat(prompt, system=sys_prompt, **kwargs)
     text = text.strip()
     if "```" in text:
         for part in text.split("```"):
