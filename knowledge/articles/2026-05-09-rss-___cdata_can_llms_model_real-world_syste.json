@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[Can LLMs model real-world systems in TLA+?]]>",
+  "url": "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "本文探讨了大型语言模型（LLM）在TLA+形式化建模中的能力，评估其能否将真实世界系统转化为精确的TLA+规范。研究发现，尽管LLM能生成基本正确的模型，但在处理复杂系统状态和不变式时仍存在显著局限。",
+  "highlights": [
+    "LLM可以生成简单的TLA+模型，但复杂系统建模能力有限",
+    "当前LLM在理解系统不变式和状态转换方面存在不足",
+    "研究为AI辅助形式化验证提供了重要参考"
+  ],
+  "score": 7,
+  "score_reason": "文章选题前沿，实验设计合理，结论具有实际参考价值，但样本量和系统复杂度有限，影响泛化性。",
+  "tags": [
+    "LLM",
+    "TLA+",
+    "形式化验证"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 16:21:56 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:50Z"
+}

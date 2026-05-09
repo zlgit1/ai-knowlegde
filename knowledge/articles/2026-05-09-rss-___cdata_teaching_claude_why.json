@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[Teaching Claude Why]]>",
+  "url": "https://www.anthropic.com/research/teaching-claude-why",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "Anthropic 的研究展示了如何通过“教学理由”来提升 Claude 模型的推理能力和可解释性，即在训练过程中不仅提供正确答案，还提供详细的推理步骤。这种方法显著提高了模型在复杂任务上的表现，并增强了其决策过程的透明度。",
+  "highlights": [
+    "通过提供推理步骤来训练模型，可以显著提升其复杂任务的表现。",
+    "该方法增强了模型决策的可解释性，有助于理解其内部逻辑。",
+    "研究展示了在训练中融入“为什么”这一要素对 AI 安全与可靠性的潜在价值。"
+  ],
+  "score": 8,
+  "score_reason": "该研究在提升模型推理能力和可解释性方面具有创新性和实用价值，对 AI 安全领域有重要启示，但尚需更多实际应用验证。",
+  "tags": [
+    "AI 安全",
+    "可解释性",
+    "模型训练"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 17:59:41 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:34Z"
+}

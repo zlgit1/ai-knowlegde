@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[The React2Shell Story]]>",
+  "url": "https://lachlan.nz/blog/the-react2shell-story/",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "本文讲述了React2Shell漏洞的故事，揭示了React应用中一个严重的安全问题，攻击者可通过特制输入执行任意shell命令。文章详细分析了漏洞成因、利用方式及修复建议，强调了前端安全的重要性。",
+  "highlights": [
+    "React2Shell漏洞允许攻击者通过React应用执行任意shell命令",
+    "漏洞源于React对用户输入的不当处理",
+    "文章提供了详细的漏洞分析和修复指南"
+  ],
+  "score": 8,
+  "score_reason": "该文章技术深度高，对安全社区有重要警示意义，但受众相对专业，综合评分8分。",
+  "tags": [
+    "React",
+    "安全漏洞",
+    "shell注入"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 16:39:48 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:42Z"
+}

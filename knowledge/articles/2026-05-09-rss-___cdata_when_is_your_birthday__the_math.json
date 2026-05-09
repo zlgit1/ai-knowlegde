@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[When is your birthday? The math behind hash collisions]]>",
+  "url": "https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "本文通过生日悖论解释了哈希碰撞的数学原理，展示了在随机选择中碰撞概率如何快速增长，并探讨了该原理在密码学和安全领域的实际应用。",
+  "highlights": [
+    "生日悖论表明，在23人中至少两人同一天生日的概率超过50%。",
+    "哈希碰撞的概率随输入数量平方增长，而非线性增长。",
+    "该原理用于评估哈希函数的安全性和设计攻击策略。"
+  ],
+  "score": 8,
+  "score_reason": "文章深入浅出地结合数学与安全实践，内容清晰且具有教育意义，但缺乏最新研究或高级应用案例。",
+  "tags": [
+    "生日悖论",
+    "哈希碰撞",
+    "密码学"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 20:18:39 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:22Z"
+}

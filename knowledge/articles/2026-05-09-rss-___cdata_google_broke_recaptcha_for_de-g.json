@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[Google broke reCAPTCHA for de-googled Android users]]>",
+  "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "Google 的 reCAPTCHA 服务对去谷歌化的 Android 用户失效，导致这些用户无法正常使用依赖该验证的网站。该问题在 Hacker News 上引发广泛讨论，相关帖子获得大量关注和评论。",
+  "highlights": [
+    "Google 的 reCAPTCHA 对去谷歌化的 Android 用户无法正常工作",
+    "该问题在 Hacker News 上获得 881 个点赞和 294 条评论",
+    "讨论中提到了 Google Cloud Fraud Defense 与 reCAPTCHA 的关联"
+  ],
+  "score": 8,
+  "score_reason": "该问题涉及用户隐私与谷歌服务依赖性的冲突，具有较高的技术和社会关注度，且讨论热度高。",
+  "tags": [
+    "Google",
+    "reCAPTCHA",
+    "Android"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 18:45:58 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:31Z"
+}

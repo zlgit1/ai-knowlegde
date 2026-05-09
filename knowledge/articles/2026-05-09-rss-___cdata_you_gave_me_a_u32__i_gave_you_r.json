@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[You gave me a u32. I gave you root. (io_uring ZCRX freelist LPE)]]>",
+  "url": "https://ze3tar.github.io/post-zcrx.html",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "本文详细分析了Linux内核io_uring子系统中的ZCRX（零拷贝接收）功能存在的一个漏洞，攻击者通过控制一个u32类型的值，利用freelist（空闲列表）的缺陷实现了权限提升（LPE），最终获得root权限。文章深入探讨了漏洞的触发机制、利用方法以及内核安全的重要性。",
+  "highlights": [
+    "io_uring ZCRX功能中的freelist管理缺陷可被利用进行权限提升",
+    "攻击者通过控制一个u32值即可触发漏洞并获得root权限",
+    "漏洞利用涉及内核内存操作和提权技术的详细分析"
+  ],
+  "score": 8,
+  "score_reason": "该漏洞影响广泛使用的Linux内核io_uring子系统，且利用方式相对简单（仅需控制u32值），具有较高的实际威胁性和技术深度，因此评分较高。",
+  "tags": [
+    "Linux内核",
+    "io_uring",
+    "权限提升"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 19:40:39 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:27Z"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[AI is breaking two vulnerability cultures]]>",
+  "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "文章探讨了人工智能如何打破两种漏洞文化：一种是传统的、缓慢的、由人类专家主导的漏洞发现与修复流程，另一种是新兴的、快速的、由AI驱动的自动化漏洞挖掘模式。AI的介入正在改变安全领域的权力平衡和效率，但也带来了新的挑战。",
+  "highlights": [
+    "传统漏洞文化依赖人类专家，流程缓慢但深入；AI驱动的文化追求速度和自动化，可能牺牲深度。",
+    "AI能快速发现大量漏洞，但可能导致误报和修复优先级混乱。",
+    "两种文化的融合需要新的协作模式和安全策略。"
+  ],
+  "score": 8,
+  "score_reason": "文章切中当前AI安全领域的关键矛盾，观点新颖且具有实践指导意义，但部分论述略显抽象。",
+  "tags": [
+    "AI安全",
+    "漏洞管理",
+    "自动化安全"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 17:55:08 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:38Z"
+}

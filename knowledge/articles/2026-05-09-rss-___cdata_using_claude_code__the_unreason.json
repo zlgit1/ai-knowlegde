@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[Using Claude Code: The unreasonable effectiveness of HTML]]>",
+  "url": "https://twitter.com/trq212/status/2052809885763747935",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "本文探讨了HTML在AI辅助编程中的惊人效果，特别是通过Claude Code等工具生成HTML时，其结构化特性使得AI能更准确地理解和生成代码。作者通过示例展示了HTML在复杂任务中的高效表现，并引用相关讨论进一步佐证这一观点。",
+  "highlights": [
+    "HTML的结构化特性使其在AI编程中表现出色，能提升代码生成的准确性和效率。",
+    "Claude Code等工具利用HTML的语义化标签，实现了更智能的代码补全和生成。",
+    "文章通过实际案例和社区讨论，验证了HTML在AI辅助编程中的“不合理”有效性。"
+  ],
+  "score": 8,
+  "score_reason": "文章观点新颖，结合具体示例和社区反馈，论证充分，对AI编程实践有较高参考价值，但缺乏更广泛的技术对比和深入分析。",
+  "tags": [
+    "HTML",
+    "AI编程",
+    "Claude Code"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Sat, 09 May 2026 04:53:52 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:04:08Z"
+}

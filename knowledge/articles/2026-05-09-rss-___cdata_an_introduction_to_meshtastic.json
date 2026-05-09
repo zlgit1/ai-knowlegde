@@ -1,0 +1,24 @@
+{
+  "title": "<![CDATA[An Introduction to Meshtastic]]>",
+  "url": "https://meshtastic.org/docs/introduction/",
+  "source": "rss",
+  "popularity": 0,
+  "summary": "Meshtastic是一个基于LoRa无线电技术的开源去中心化通信平台，允许用户在没有互联网或蜂窝网络的情况下通过低功耗设备进行长距离文本消息传输。它适用于户外探险、应急通信和社区网络，强调隐私和自主性。",
+  "highlights": [
+    "Meshtastic使用LoRa技术实现长距离低功耗通信，无需传统网络基础设施。",
+    "项目完全开源，支持多种硬件设备，如ESP32和nRF52微控制器。",
+    "适用于应急响应、户外活动和离线社区通信场景。"
+  ],
+  "score": 8,
+  "score_reason": "该文章介绍了Meshtastic的核心概念和实用价值，内容清晰且具有实际应用意义，但缺乏深入的技术细节或最新进展。",
+  "tags": [
+    "Meshtastic",
+    "LoRa",
+    "开源通信"
+  ],
+  "language": null,
+  "topics": [],
+  "published_at": "Fri, 08 May 2026 11:22:11 +0000",
+  "collected_at": "2026-05-09T07:03:53Z",
+  "stored_at": "2026-05-09T07:05:05Z"
+}
