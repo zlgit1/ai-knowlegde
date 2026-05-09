@@ -28,9 +28,9 @@ _PROVIDER_CONFIG = {
 }
 
 _PRICING = {
-    "deepseek": {"input": 0.27, "output": 1.10},
-    "qwen": {"input": 2.00, "output": 6.00},
-    "openai": {"input": 0.15, "output": 0.60},
+    "deepseek": {"input": 1, "output": 2},
+    "qwen": {"input": 4, "output": 12},
+    "openai": {"input": 150, "output": 600},
 }
 
 
@@ -45,6 +45,83 @@ class Usage:
 class LLMResponse:
     content: str
     usage: Usage = field(default_factory=Usage)
+
+
+class CostTracker:
+    """Tracks token usage and estimated cost across LLM API calls.
+
+    Attributes:
+        records: List of recorded usage entries.
+    """
+
+    def __init__(self):
+        self._records: list[dict] = []
+
+    def record(self, usage: Usage, provider: str):
+        """Record a single API call's token usage.
+
+        Args:
+            usage: Token usage from an LLM response.
+            provider: Provider name (e.g. 'deepseek', 'qwen', 'openai').
+        """
+        self._records.append({
+            "provider": provider.lower(),
+            "prompt_tokens": usage.prompt_tokens,
+            "completion_tokens": usage.completion_tokens,
+            "total_tokens": usage.total_tokens,
+        })
+
+    def estimated_cost(self, provider: str) -> float:
+        """Return estimated total cost for a given provider (元).
+
+        Args:
+            provider: Provider name to filter by.
+
+        Returns:
+            Total cost in CNY.
+        """
+        provider = provider.lower()
+        pricing = _PRICING.get(provider)
+        if not pricing:
+            return 0.0
+        total_input = sum(r["prompt_tokens"] for r in self._records if r["provider"] == provider)
+        total_output = sum(r["completion_tokens"] for r in self._records if r["provider"] == provider)
+        cost = total_input * pricing["input"] / 1_000_000 + total_output * pricing["output"] / 1_000_000
+        return round(cost, 4)
+
+    def report(self, provider: str | None = None) -> str:
+        """Build a cost report string.
+
+        Args:
+            provider: If set, only show costs for this provider.
+                      If None, show all providers that have records.
+
+        Returns:
+            Formatted cost report.
+        """
+        providers = [provider] if provider else {r["provider"] for r in self._records}
+        lines = ["\n=== Cost Report ==="]
+        total_cost = 0.0
+        for prov in sorted(providers):
+            cost = self.estimated_cost(prov)
+            if cost == 0.0:
+                continue
+            records = [r for r in self._records if r["provider"] == prov]
+            total_in = sum(r["prompt_tokens"] for r in records)
+            total_out = sum(r["completion_tokens"] for r in records)
+            lines.append(
+                f"  {prov}: {total_in:,} in + {total_out:,} out tokens  "
+                f"≈ ¥{cost:.4f}"
+            )
+            total_cost += cost
+        lines.append(f"  Total: ¥{total_cost:.4f}")
+        lines.append("=" * 40)
+        report = "\n".join(lines)
+        print(report)
+        return report
+
+
+tracker = CostTracker()
 
 
 class LLMProvider(ABC):
@@ -130,7 +207,9 @@ def chat_with_retry(
 ) -> LLMResponse:
     for attempt in range(max_retries):
         try:
-            return provider.chat(messages, **kwargs)
+            response = provider.chat(messages, **kwargs)
+            tracker.record(response.usage, provider.name)
+            return response
         except Exception as e:
             if attempt == max_retries - 1:
                 raise
@@ -144,6 +223,25 @@ def chat_with_retry(
             )
             time.sleep(wait)
     raise RuntimeError("Unreachable")
+
+
+def chat(prompt: str, provider: Optional[str] = None, **kwargs) -> dict:
+    """Send a single prompt to the LLM and return the response dict.
+
+    Args:
+        prompt: User message string.
+        provider: Provider name override.
+        **kwargs: Extra args forwarded to chat_with_retry.
+
+    Returns:
+        Dict with 'content' key containing the response text.
+    """
+    p = get_provider(provider)
+    try:
+        response = chat_with_retry(p, [{"role": "user", "content": prompt}], **kwargs)
+        return {"content": response.content}
+    finally:
+        p.close()
 
 
 def quick_chat(prompt: str, provider: Optional[str] = None, **kwargs) -> str:
@@ -172,7 +270,7 @@ if __name__ == "__main__":
             )
             cost = calculate_cost(response.usage, name)
             logger.info(
-                "Response: %s | Usage: %s | Cost: $%.6f",
+                "Response: %s | Usage: %s | Cost: ¥%.4f",
                 response.content,
                 response.usage,
                 cost,
@@ -180,3 +278,5 @@ if __name__ == "__main__":
             provider.close()
         except Exception as e:
             logger.error("Provider %s failed: %s", name, e)
+
+    tracker.report()

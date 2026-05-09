@@ -15,7 +15,7 @@ from typing import Optional
 import httpx
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from model_client import create_provider, chat_with_retry
+from model_client import create_provider, chat_with_retry, tracker
 
 logger = logging.getLogger(__name__)
 
@@ -31,7 +31,7 @@ GITHUB_HEADERS = {
 
 RSS_FEEDS = [
     "https://hnrss.org/frontpage",
-    "http://export.arxiv.org/rss/cs.AI",
+    "https://export.arxiv.org/rss/cs.AI",
 ]
 
 ANALYSIS_PROMPT = """You are an AI knowledge analyst working in Chinese. Analyze the following article and return ONLY valid JSON (no markdown, no code fences):
@@ -88,7 +88,7 @@ def collect_from_github(limit: int, dry_run: bool = False) -> list[dict]:
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    query = "topic:ai OR topic:machine-learning OR topic:llm"
+    query = "topic:ai stars:>100"
     params = {"q": query, "sort": "stars", "order": "desc", "per_page": min(limit, 100)}
 
     try:
@@ -442,6 +442,8 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool, verbose: bool) -
     effective = 0 if dry_run else len(saved)
 
     logger.info("Pipeline complete: %d articles saved", effective)
+    provider_name = os.environ.get("LLM_PROVIDER", "deepseek")
+    tracker.report(provider=provider_name)
     return 0
 
 
