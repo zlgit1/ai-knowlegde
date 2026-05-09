@@ -8,7 +8,7 @@ from langgraph.graph import END, StateGraph
 
 from workflows.human_flag import human_flag_node
 from workflows.collector import collect_node
-from workflows.nodes import analyze_node
+from workflows.analyzer import analyze_node
 from workflows.organizer import organize_node
 from workflows.planner import planner_node
 from workflows.reviewer import review_node
