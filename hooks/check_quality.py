@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""5-dimension quality scoring for knowledge entry JSON files."""
+"""4-dimension quality scoring for knowledge entry JSON files."""
 
 import json
 import re
@@ -23,39 +23,6 @@ TECH_KEYWORDS = {
     "开源", "MCP", "VFS", "KV cache",
 }
 
-STANDARD_TAGS = {
-    "AI Agent", "Agent", "Agent编排", "Agent框架",
-    "AI", "AI 安全", "AI 编程", "AI平台",
-    "编码助手", "Claude Code", "Claude 技能", "Cursor",
-    "DeepSeek", "OpenAI", "LLM", "LLM 引擎", "LLM 推理",
-    "LLM 教学", "LLM 评估", "大模型",
-    "本地推理", "Apple Metal", "GPU 优化", "Blackwell", "MLA",
-    "模型微调", "LoRA", "消费级硬件",
-    "量化交易", "金融科技",
-    "区块链", "DeFi", "以太坊", "智能合约", "Solidity",
-    "安全审计", "CoT",
-    "LangChain", "PyTorch", "Transformer", "深度学习",
-    "RAG", "知识库", "工作流编排", "低代码", "MCP",
-    "视频处理", "音频处理", "内容创作", "音乐制作",
-    "HTML 模板", "前端", "Web UI",
-    "Prompt 工程", "Prompt 注入", "对齐研究", "中文资源",
-    "工业机器人", "ROS2", "安全合规",
-    "架构创新", "基础设施", "趋势", "信号", "生态链",
-    "成本优化", "API 成本优化", "Codex",
-    "虚拟文件系统", "VFS", "工具编排",
-    "图计算", "状态管理", "多智能体", "生产级",
-    "本地部署", "开源模型",
-    "Python", "TypeScript", "开源", "学术", "标准",
-    "教程", "入门", "教育", "中文",
-    "Datawhale", "字节跳动", "SuperAgent",
-    "聊天机器人", "即时通讯", "多平台", "插件",
-    "代码审查", "CI/CD", "开发者工具", "DevOps",
-    "自动化", "沙箱安全", "企业级",
-    "深度研究", "长时间任务", "磁盘缓存", "KV cache",
-    "工具调用", "分布式", "架构", "Pipeline",
-    "安全", "隐私", "对齐", "数据集",
-    "tool-use", "code-generation", "agent",
-}
 
 BUZZWORD_CN = [
     "赋能", "抓手", "闭环", "打通", "全链路",
@@ -92,9 +59,9 @@ class QualityReport:
 
     @property
     def grade(self) -> str:
-        if self.total_score >= 80:
+        if self.total_score >= 68:
             return "A"
-        if self.total_score >= 60:
+        if self.total_score >= 51:
             return "B"
         return "C"
 
@@ -106,7 +73,7 @@ class QualityReport:
             lines.append(
                 f"  {bar} {d.name}: {d.score:5.1f}/{d.max_score:<2}  {d.detail}"
             )
-        total_str = f"{self.total_score:.1f}/100"
+        total_str = f"{self.total_score:.1f}/85"
         lines.append(f"  {'─' * 40}")
         lines.append(f"  TOTAL: {total_str:>8}  [{self.grade}]")
         return "\n".join(lines)
@@ -193,31 +160,6 @@ def score_format_compliance(data: dict) -> DimensionScore:
     return DimensionScore("格式规范", float(total), 20, ", ".join(parts))
 
 
-def score_tag_precision(data: dict) -> DimensionScore:
-    tags = _get(data, "tags")
-    if tags is None:
-        tags = _get(data, "analysis", "tags")
-    if not isinstance(tags, list) or len(tags) == 0:
-        return DimensionScore("标签精度", 12, 15, "无标签")
-
-    total = len(tags)
-    valid = sum(1 for t in tags if isinstance(t, str) and t in STANDARD_TAGS)
-
-    if total == 0:
-        return DimensionScore("标签精度", 12, 15, "无标签")
-
-    ratio = valid / total
-    if 1 <= total <= 3:
-        score = 15.0 * ratio
-    else:
-        score = 15.0 * ratio * 0.7
-
-    detail = f"({valid}/{total} 合法"
-    if total > 3:
-        detail += ", 超3个降权"
-    detail += ")"
-    return DimensionScore("标签精度", score, 15, detail)
-
 
 def score_buzzword_check(data: dict) -> DimensionScore:
     texts = []
@@ -277,7 +219,6 @@ def score_file(filepath: Path) -> QualityReport:
     report.dimensions.append(score_summary_quality(data))
     report.dimensions.append(score_technical_depth(data))
     report.dimensions.append(score_format_compliance(data))
-    report.dimensions.append(score_tag_precision(data))
     report.dimensions.append(score_buzzword_check(data))
     return report
 
