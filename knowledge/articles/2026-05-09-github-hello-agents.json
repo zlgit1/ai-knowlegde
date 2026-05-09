@@ -1,0 +1,26 @@
+{
+  "title": "datawhalechina/hello-agents",
+  "url": "https://github.com/datawhalechina/hello-agents",
+  "source": "github-trending",
+  "popularity": 44789,
+  "summary": "《从零开始构建智能体》是 Datawhale 社区出品的系统化中文 AI Agent 教程，从 Agent 基础概念、工具调用、RAG 集成到多智能体协作，以 Jupyter Notebook + 实战项目的方式循序渐进。上线 8 个月即获 44K star，成为中文 AI 教育领域增长最快的项目之一。",
+  "highlights": [
+    "中文 AI Agent 领域最系统的入门教程，填补教育空白",
+    "从零开始 + 实战驱动，Jupyter Notebook 可直接运行",
+    "覆盖 Agent 全栈：基础原理、工具使用、RAG、多智能体",
+    "Datawhale 开源社区背书，内容质量有保障",
+    "增长迅猛，8 个月 44K star，反映巨大的中文 AI 学习需求"
+  ],
+  "score": 7,
+  "score_reason": "在中文 AI Agent 教育领域，hello-agents 是目前最好的免费资源。它不是技术创新，而是教育普惠——让更多中文开发者能系统学习 Agent 开发。给 7 分而非更高，因为内容深度距离英文顶级教程仍有差距，且更新频率依赖社区贡献。",
+  "tags": [
+    "教程",
+    "Agent",
+    "中文",
+    "入门",
+    "Datawhale",
+    "教育"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

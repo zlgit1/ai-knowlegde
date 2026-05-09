@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-tq-trading-agent",
+  "title": "TQ-trade-agent/tq-trading-agent — AI 多 Agent 量化交易系统",
+  "source_url": "https://github.com/TQ-trade-agent/tq-trading-agent",
+  "summary": "LangChain + LangGraph 实现多 Agent 交易决策，覆盖股票研究到自动交易全流程",
+  "analysis": {
+    "score": 5,
+    "score_reason": "金融+AI Agent 方向有潜力，但 292 stars 项目早期，量化交易涉及真实资金风险需高度审慎评估",
+    "highlights": [
+      "292 stars，LangChain + LangGraph 实现多 Agent 交易决策系统，覆盖股票研究到自动交易全流程",
+      "Vue + TypeScript 前端，AI Agent 驱动的研究分析与交易执行一体化"
+    ],
+    "tags": ["量化交易", "AI Agent", "LangChain", "金融科技"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

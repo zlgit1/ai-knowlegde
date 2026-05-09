@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-mirage",
+  "title": "strukto-ai/mirage — 为 AI Agent 打造的统一虚拟文件系统",
+  "source_url": "https://github.com/strukto-ai/mirage",
+  "summary": "将 S3/Slack/GitHub 等 10+ 资源挂载为统一文件树，Agent 仅需 bash 语义即可操作各类服务",
+  "analysis": {
+    "score": 8,
+    "score_reason": "解决 Agent 工具调用的根本痛点（N 个服务 N 套 API），设计优雅且生态兼容性好，1484 stars 增长迅猛",
+    "highlights": [
+      "TypeScript + Python 双 SDK，兼容 OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI 等主流框架",
+      "支持 S3/Gmail/Slack/GitHub/Redis/SSH/Discord 等 10+ 资源类型统一挂载，Agent 仅需 bash 语义无需新知识",
+      "双层缓存架构（索引缓存 + 文件缓存），支持 RAM 和 Redis 后端，快照可克隆/版本化/跨机器迁移"
+    ],
+    "tags": ["AI Agent", "虚拟文件系统", "工具编排", "VFS"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

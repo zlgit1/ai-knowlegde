@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-stemdeck",
+  "title": "thcp/stemdeck — AI 驱动的人声/乐器分离平台",
+  "source_url": "https://github.com/thcp/stemdeck",
+  "summary": "基于深度学习的音频源分离平台，Web 端可直接使用，369 stars",
+  "analysis": {
+    "score": 5,
+    "score_reason": "实用音频工具（369 stars），但已有成熟开源方案（Spleeter、Demucs），差异化不显著",
+    "highlights": [
+      "369 stars，基于深度学习的音频源分离，Web 端可直接使用",
+      "降低音乐制作门槛，适合内容创作者的智能分轨需求"
+    ],
+    "tags": ["音频处理", "AI", "音乐制作"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-robotics-skills-suite",
+  "title": "jherrodthomas/robotics-skills-suite — 76 个 Claude 技能覆盖工业机器人安全合规",
+  "source_url": "https://github.com/jherrodthomas/robotics-skills-suite",
+  "summary": "76 个预构建 Claude 技能覆盖 ISO 工业机器人安全标准，加速制造业 AI 落地",
+  "analysis": {
+    "score": 6,
+    "score_reason": "垂直领域价值高（505 stars），76 个技能覆盖全面；但受众仅限工业机器人领域，普适性差",
+    "highlights": [
+      "76 个预构建 Claude 技能，覆盖 ISO 10218/13849/15066/62061/IEC 62443 等安全标准",
+      "覆盖机器人全生命周期：CE 标志认证、功能安全、OT 网络安全、ROS2/URDF/Nav2"
+    ],
+    "tags": ["工业机器人", "Claude 技能", "安全合规", "ROS2"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

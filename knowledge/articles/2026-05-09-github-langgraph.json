@@ -1,0 +1,25 @@
+{
+  "title": "langchain-ai/langgraph",
+  "url": "https://github.com/langchain-ai/langgraph",
+  "source": "github-trending",
+  "popularity": 31560,
+  "summary": "LangGraph 用有向图（DAG）来建模 Agent 的执行流程，支持条件分支、循环、人工审批节点和状态持久化。它弥补了 LangChain 在复杂 Agent 控制流方面的不足，让开发者能构建可预测、可调试的生产级多智能体系统。同时发布 Python 和 TypeScript 版本。",
+  "highlights": [
+    "图式 Agent 编排，用 DAG 精确控制 Agent 的执行路径",
+    "支持条件分支、循环和 Human-in-the-loop 审批节点",
+    "内置状态管理和检查点，长流程任务可暂停恢复",
+    "与 LangChain 生态深度集成，复用现有工具和模型集成",
+    "Python + TypeScript 双版本，前后端一致体验"
+  ],
+  "score": 8,
+  "score_reason": "LangGraph 是 LangChain 生态中最具技术含量的子项目。图式编排是构建可靠 Agent 系统的正确抽象——它把 Agent 行为从 '魔法黑盒' 变成 '可审计的状态图'。在企业级多智能体场景中，LangGraph 目前是最成熟的选择。扣分点：学习曲线较陡，小团队可能过度设计。",
+  "tags": [
+    "Agent编排",
+    "图计算",
+    "状态管理",
+    "多智能体",
+    "生产级"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

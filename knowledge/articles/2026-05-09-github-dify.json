@@ -1,0 +1,26 @@
+{
+  "title": "langgenius/dify",
+  "url": "https://github.com/langgenius/dify",
+  "source": "github-trending",
+  "popularity": 140639,
+  "summary": "Dify 是当前最流行的开源 AI 应用开发平台，提供可视化工作流编排、内置 RAG 引擎、MCP 协议支持和多模型管理。它将 Agent 工作流从纯代码解放为拖拽式构建，同时保留专业开发者的深度定制能力。22K fork 和 761 个 open issue 说明社区极度活跃，已形成插件生态。",
+  "highlights": [
+    "可视化拖拽式 Agent 工作流编排，降低 AI 应用开发门槛",
+    "内置 RAG 检索增强生成管道，一站式知识库问答",
+    "支持 MCP (Model Context Protocol)，接入外部工具生态",
+    "多模型支持：OpenAI、Gemini、Claude 等主流 LLM 即插即用",
+    "低代码+专业代码双模式，兼顾非开发者和工程师"
+  ],
+  "score": 9,
+  "score_reason": "Dify 正在定义 'AI 应用搭建平台' 这一品类。它将 Agent 开发从框架级推进到平台级，影响力类似 WordPress 之于 CMS。开源 + 可自部署 + MCP 生态的策略使其具备成为行业标准的潜力。扣 1 分因为企业级功能（RBAC、审计）仍在完善中。",
+  "tags": [
+    "AI平台",
+    "工作流编排",
+    "Agent",
+    "RAG",
+    "低代码",
+    "MCP"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-trend-deepseek-ecosystem",
+  "title": "趋势：DeepSeek 生态链全面崛起",
+  "source_url": "https://github.com/trending",
+  "summary": "从 ds4（本地推理引擎）到 deepclaude（Agent 前端替换）到 tokenspeed（推理引擎）到 CodexSaver（成本优化），DeepSeek V4 形成完整生态链",
+  "analysis": {
+    "score": 8,
+    "score_reason": "DeepSeek V4 系列已形成从底到上的完整生态链条，整个社区围绕 DeepSeek 构建基础设施的趋势明显",
+    "highlights": [
+      "ds4 和 tokenspeed 两个推理引擎同时发力，覆盖 Mac Metal 和 Blackwell GPU 两大硬件平台",
+      "deepclaude 验证 DeepSeek 替代闭源模型的商业可行性（成本降至 1/17），降低整个行业的使用门槛",
+      "CodexSaver 揭示高频 API 调用场景下模型替换的成本优化空间巨大"
+    ],
+    "tags": ["DeepSeek", "趋势", "生态链", "本地推理"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

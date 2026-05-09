@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-solidity-cot-auditor",
+  "title": "butthtio/solidity-cot-auditor — 多角色 CoT LLM 流水线用于 Solidity 智能合约安全审计",
+  "source_url": "https://github.com/butthtio/solidity-cot-auditor",
+  "summary": "多角色 CoT（审计员/开发者/攻击者）流水线，自动化 Solidity 合约安全审计",
+  "analysis": {
+    "score": 6,
+    "score_reason": "垂直场景有实际需求（341 stars），多角色 CoT 设计思路新颖，但 Solidity 审计市场规模有限",
+    "highlights": [
+      "341 stars，Chain-of-Thought + 多角色设计（审计员/开发者/攻击者），多视角分析合约安全",
+      "自动化 Solidity 代码审计流水线，提升合约审查效率，降低人工成本"
+    ],
+    "tags": ["智能合约", "Solidity", "CoT", "安全审计"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

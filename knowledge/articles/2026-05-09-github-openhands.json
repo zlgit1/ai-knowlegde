@@ -1,0 +1,25 @@
+{
+  "title": "OpenHands/OpenHands",
+  "url": "https://github.com/OpenHands/OpenHands",
+  "source": "github-trending",
+  "popularity": 72943,
+  "summary": "OpenHands（原 OpenDevin）是一个开源的自主 AI 编程助手，能够独立完成代码编写、调试、重构和文件操作。支持 Web 界面和 CLI 两种交互方式，采用沙箱隔离执行环境确保安全性。9K fork 说明已有大量二次开发和定制部署。",
+  "highlights": [
+    "全自主编程能力：不仅能补全代码，还能规划、执行、调试完整任务",
+    "沙箱执行环境，AI 生成的代码在隔离环境中运行，保障安全性",
+    "支持多种 LLM 后端（OpenAI、Claude、本地模型）灵活切换",
+    "Web + CLI 双界面，适合不同工作场景",
+    "活跃的开源社区，9K fork 和 416 个 open issue 持续迭代"
+  ],
+  "score": 8,
+  "score_reason": "OpenHands 代表了 AI 编程从 '辅助' 到 '自主' 的范式转变。对于原型开发、自动化脚本、代码审查等场景有直接生产力提升。扣分原因：自主编程的可靠性仍有波动，复杂项目中的上下文理解有时不够精准。但其开源和沙箱设计为安全部署提供了基础。",
+  "tags": [
+    "AI编程",
+    "开发者工具",
+    "自动化",
+    "Agent",
+    "沙箱安全"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

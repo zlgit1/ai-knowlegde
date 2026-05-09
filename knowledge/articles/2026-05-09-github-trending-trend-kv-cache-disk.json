@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-trend-kv-cache-disk",
+  "title": "信号：KV cache 磁盘化范式 — 消费级硬件运行大模型成为可能",
+  "source_url": "https://github.com/trending",
+  "summary": "antirez/ds4 将 KV cache 视为磁盘一级公民而非内存附属品，利用 Mac 高速 SSD 实现持久化缓存和会话恢复",
+  "analysis": {
+    "score": 7,
+    "score_reason": "这一设计若被验证有效，可能改变本地大模型推理的内存管理架构，使消费级硬件运行大参数模型成为现实",
+    "highlights": [
+      "antirez/ds4 独创磁盘 KV 缓存设计，将 KV cache 视为磁盘一级公民而非内存附属品",
+      "利用现代 Mac 高速 SSD 实现持久化缓存和会话恢复，2-bit 量化可在 128GB MacBook 运行 284B 参数模型",
+      "若被验证有效，将改变本地推理的内存管理架构，使消费级硬件运行大参数模型成为现实"
+    ],
+    "tags": ["KV cache", "磁盘缓存", "本地推理", "架构创新", "信号"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

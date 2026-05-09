@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-clipify",
+  "title": "louisedesadeleer/clipify — Claude Code 技能，自动将长视频裁剪为社交短视频",
+  "source_url": "https://github.com/louisedesadeleer/clipify",
+  "summary": "Claude Code 技能插件形式，自动裁剪长视频为社交短视频片段，293 stars",
+  "analysis": {
+    "score": 5,
+    "score_reason": "实用小巧的 Agent 应用（293 stars），功能单一，视频裁剪领域已有成熟工具",
+    "highlights": [
+      "293 stars，Claude Code 技能插件形式，视频裁剪流程完全 Agent 化",
+      "适合社交媒体内容创作者自动裁剪长视频为短视频片段"
+    ],
+    "tags": ["视频处理", "Claude Code", "内容创作"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

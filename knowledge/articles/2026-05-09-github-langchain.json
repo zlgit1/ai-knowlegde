@@ -1,0 +1,26 @@
+{
+  "title": "langchain-ai/langchain",
+  "url": "https://github.com/langchain-ai/langchain",
+  "source": "github-trending",
+  "popularity": 136175,
+  "summary": "LangChain 是 AI Agent 开发的事实标准框架，提供链式调用、工具集成、记忆管理和多智能体编排的完整工具链。同时支持 Python 和 TypeScript 两大生态，生态系统中已有数千个集成。近期通过 LangGraph、DeepAgents 等子项目扩展能力边界，从框架演进为平台。",
+  "highlights": [
+    "AI Agent 开发的事实标准，136K star 遥居同类首位",
+    "双语言支持 Python + TypeScript，覆盖前后端开发者",
+    "丰富的工具集成生态，几乎所有 LLM 提供商和向量数据库均有适配",
+    "模块化设计：Chains / Agents / Tools / Memory 分层清晰",
+    "持续的架构演进，从单体框架扩展为 LangChain + LangGraph + DeepAgents 产品矩阵"
+  ],
+  "score": 8,
+  "score_reason": "LangChain 是绝大多数 AI 应用的技术底座，生态位不可替代。之所以给 8 而非 9，是因为它正面临 '框架过度抽象' 的社区批评，部分开发者转向更轻量的替代方案。但其生态系统和文档的完善程度仍然无出其右，是企业级 AI 开发的务实首选。",
+  "tags": [
+    "Agent框架",
+    "LLM",
+    "Python",
+    "TypeScript",
+    "企业级",
+    "标准"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

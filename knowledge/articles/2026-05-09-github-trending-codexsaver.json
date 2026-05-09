@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-codexsaver",
+  "title": "fendouai/CodexSaver — 通过 DeepSeek 模型优化降低 OpenAI Codex 使用成本",
+  "source_url": "https://github.com/fendouai/CodexSaver",
+  "summary": "利用 DeepSeek 替代部分 Codex API 调用降低成本的 API 路由方案，273 stars",
+  "analysis": {
+    "score": 4,
+    "score_reason": "简单 API 代理方案（273 stars），功能单一，省钱效果有限，且 deepclaude 等项目已提供类似能力",
+    "highlights": [
+      "273 stars，利用 DeepSeek 替代部分 Codex API 调用降低成本",
+      "对高频 Codex 用户有一定省钱意义，但本质是 API 路由转发"
+    ],
+    "tags": ["API 成本优化", "DeepSeek", "Codex"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

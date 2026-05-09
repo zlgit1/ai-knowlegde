@@ -1,0 +1,258 @@
+{
+  "updated_at": "2026-05-09T12:00:00+08:00",
+  "total": 28,
+  "entries": [
+    {
+      "file": "2026-05-09-github-dify.json",
+      "title": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "source": "github-trending",
+      "popularity": 140639,
+      "score": 9,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-langchain.json",
+      "title": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "source": "github-trending",
+      "popularity": 136175,
+      "score": 8,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-openhands.json",
+      "title": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "source": "github-trending",
+      "popularity": 72943,
+      "score": 8,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-llama-factory.json",
+      "title": "hiyouga/LlamaFactory",
+      "url": "https://github.com/hiyouga/LlamaFactory",
+      "source": "github-trending",
+      "popularity": 71058,
+      "score": 9,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-deer-flow.json",
+      "title": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "source": "github-trending",
+      "popularity": 66130,
+      "score": 9,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-unsloth.json",
+      "title": "unslothai/unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "source": "github-trending",
+      "popularity": 63836,
+      "score": 8,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-hello-agents.json",
+      "title": "datawhalechina/hello-agents",
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "source": "github-trending",
+      "popularity": 44789,
+      "score": 7,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-continue.json",
+      "title": "continuedev/continue",
+      "url": "https://github.com/continuedev/continue",
+      "source": "github-trending",
+      "popularity": 33047,
+      "score": 7,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-astrbot.json",
+      "title": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "source": "github-trending",
+      "popularity": 31658,
+      "score": 6,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-langgraph.json",
+      "title": "langchain-ai/langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "source": "github-trending",
+      "popularity": 31560,
+      "score": 8,
+      "stored_at": "2026-05-09T03:17:59Z"
+    },
+    {
+      "file": "2026-05-09-github-trending-ds4.json",
+      "title": "antirez/ds4 — 为 DeepSeek V4 Flash 打造的 Metal 原生推理引擎",
+      "url": "https://github.com/antirez/ds4",
+      "source": "github-trending",
+      "popularity": 2627,
+      "score": 8,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-deepclaude.json",
+      "title": "aattaran/deepclaude — 用 DeepSeek V4 Pro 替换 Claude Code 后端",
+      "url": "https://github.com/aattaran/deepclaude",
+      "source": "github-trending",
+      "popularity": 1645,
+      "score": 7,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-mirage.json",
+      "title": "strukto-ai/mirage — 为 AI Agent 打造的统一虚拟文件系统",
+      "url": "https://github.com/strukto-ai/mirage",
+      "source": "github-trending",
+      "popularity": 1484,
+      "score": 8,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-yao-open-prompts.json",
+      "title": "yaojingang/yao-open-prompts — 高质量中文 Prompt 开源库",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "source": "github-trending",
+      "popularity": 1397,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-tokenspeed.json",
+      "title": "lightseekorg/tokenspeed — 为 Blackwell GPU 优化的光速级推理引擎",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "source": "github-trending",
+      "popularity": 0,
+      "score": 7,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-how-to-train-your-gpt.json",
+      "title": "raiyanyahya/how-to-train-your-gpt — 从零实现 GPT/Transformer 教学项目",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "source": "github-trending",
+      "popularity": 766,
+      "score": 6,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-robotics-skills-suite.json",
+      "title": "jherrodthomas/robotics-skills-suite — 76 个 Claude 技能覆盖工业机器人安全合规",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "source": "github-trending",
+      "popularity": 505,
+      "score": 6,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-lgbt-prompt.json",
+      "title": "JustLikeCheese/LGBT-Prompt — 利用 AI 同情偏向进行 Prompt 注入",
+      "url": "https://github.com/JustLikeCheese/LGBT-Prompt",
+      "source": "github-trending",
+      "popularity": 436,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-beautiful-html-templates.json",
+      "title": "zarazhangrui/beautiful-html-templates — 专为 AI Agent 优化的 HTML 模板库",
+      "url": "https://github.com/zarazhangrui/beautiful-html-templates",
+      "source": "github-trending",
+      "popularity": 433,
+      "score": 4,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-stemdeck.json",
+      "title": "thcp/stemdeck — AI 驱动的人声/乐器分离平台",
+      "url": "https://github.com/thcp/stemdeck",
+      "source": "github-trending",
+      "popularity": 369,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-chainreason.json",
+      "title": "joshawome/chainreason — 评估 LLM 在以太坊和 DeFi 任务的推理能力",
+      "url": "https://github.com/joshawome/chainreason",
+      "source": "github-trending",
+      "popularity": 345,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-solidity-cot-auditor.json",
+      "title": "butthtio/solidity-cot-auditor — 多角色 CoT 流水线审计 Solidity 合约",
+      "url": "https://github.com/butthtio/solidity-cot-auditor",
+      "source": "github-trending",
+      "popularity": 341,
+      "score": 6,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-clipify.json",
+      "title": "louisedesadeleer/clipify — Claude Code 技能自动裁剪长视频为短视频",
+      "url": "https://github.com/louisedesadeleer/clipify",
+      "source": "github-trending",
+      "popularity": 293,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-tq-trading-agent.json",
+      "title": "TQ-trade-agent/tq-trading-agent — AI 多 Agent 量化交易系统",
+      "url": "https://github.com/TQ-trade-agent/tq-trading-agent",
+      "source": "github-trending",
+      "popularity": 292,
+      "score": 5,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-codexsaver.json",
+      "title": "fendouai/CodexSaver — 通过 DeepSeek 降低 OpenAI Codex 使用成本",
+      "url": "https://github.com/fendouai/CodexSaver",
+      "source": "github-trending",
+      "popularity": 273,
+      "score": 4,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-trend-agent-infrastructure.json",
+      "title": "趋势：AI Agent 基础设施全面爆发",
+      "url": "https://github.com/trending",
+      "source": "github-trending",
+      "popularity": 0,
+      "score": 8,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-trend-deepseek-ecosystem.json",
+      "title": "趋势：DeepSeek 生态链全面崛起",
+      "url": "https://github.com/trending",
+      "source": "github-trending",
+      "popularity": 0,
+      "score": 8,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    },
+    {
+      "file": "2026-05-09-github-trending-trend-kv-cache-disk.json",
+      "title": "信号：KV cache 磁盘化范式 — 消费级硬件运行大模型成为可能",
+      "url": "https://github.com/trending",
+      "source": "github-trending",
+      "popularity": 0,
+      "score": 7,
+      "stored_at": "2026-05-09T12:00:00+08:00"
+    }
+  ]
+}

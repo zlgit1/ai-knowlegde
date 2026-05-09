@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-trend-agent-infrastructure",
+  "title": "趋势：AI Agent 基础设施全面爆发",
+  "source_url": "https://github.com/trending",
+  "summary": "从 deepclaude（Agent 编排）、mirage（Agent VFS）、robotics-skills-suite（行业技能库）到 clipify（垂直应用插件），Agent 正从概念走向工程化落地",
+  "analysis": {
+    "score": 8,
+    "score_reason": "底层基础设施（VFS、编排）和垂直应用层同时爆发，Agent 生态正在快速工程化，值得关注长期趋势",
+    "highlights": [
+      "mirage 统一 VFS 解决 N 个服务 N 套 API 的 Agent 工具调用痛点，设计优雅且生态兼容性好",
+      "deepclaude 零侵入式 Agent 编排方案，节省 90%+ 成本，体现模型替换是 Agent 降本的关键路径",
+      "从通用编排到行业技能库到垂直插件，Agent 产品分层逐渐分明"
+    ],
+    "tags": ["AI Agent", "趋势", "基础设施", "工具编排"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

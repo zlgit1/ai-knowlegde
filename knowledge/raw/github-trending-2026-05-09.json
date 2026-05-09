@@ -1,0 +1,211 @@
+{
+  "source": "github-trending",
+  "skill": "github-trending",
+  "collected_at": "2026-05-09T11:50:35+08:00",
+  "items": [
+    {
+      "name": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "summary": "Redis 作者 antirez 打造的 DeepSeek 4 Flash 本地推理引擎，专为 Apple Metal 优化，可在 Mac 上高效运行大模型推理",
+      "stars": 2627,
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "summary": "将 Claude Code 的自主 Agent 循环与 DeepSeek V4 结合，实现更强大的 AI 编码助手，融合两大模型优势",
+      "stars": 1645,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "summary": "为 AI Agent 提供的统一虚拟文件系统（VFS），让 Agent 能像操作本地文件一样管理跨环境资源，提升工具调用效率",
+      "stars": 1484,
+      "language": "TypeScript",
+      "topics": [
+        "agent-sandbox",
+        "agent-tools",
+        "ai-agents",
+        "bash",
+        "claude-code",
+        "fuse",
+        "langchain",
+        "llm-agents",
+        "openai-agents",
+        "python",
+        "typescript",
+        "vfs",
+        "virtual-filesystem"
+      ]
+    },
+    {
+      "name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "summary": "高质量中文 AI Prompt 开源库，覆盖工作、学习、内容创作、营销和生活五大场景，Prompt 工程实用资源",
+      "stars": 1397,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "chinese-prompts",
+        "geo",
+        "prompt-engineering",
+        "prompts"
+      ]
+    },
+    {
+      "name": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "summary": "光速级 LLM 推理引擎 TokenSpeed，专为 Blackwell 等 GPU 优化，追求极致推理速度，支持 DeepSeek 等主流模型",
+      "stars": 801,
+      "language": "Python",
+      "topics": [
+        "blackwell",
+        "deepseek",
+        "gpt-oss",
+        "kimi",
+        "lightseek",
+        "llm",
+        "minimax",
+        "qwen",
+        "speed-of-light",
+        "tokenspeed"
+      ]
+    },
+    {
+      "name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "summary": "从零构建现代 LLM 的教学项目，每一行代码都有注释，适合想深入理解 GPT/Transformer 原理的开发者",
+      "stars": 766,
+      "language": "Jupyter Notebook",
+      "topics": [
+        "attention-mechanism",
+        "deep-learning",
+        "educational",
+        "from-scratch",
+        "gpt",
+        "language-model",
+        "llama",
+        "llm",
+        "machine-learning",
+        "natural-language-processing",
+        "python",
+        "pytorch",
+        "tokenisation",
+        "transformers",
+        "tutorial"
+      ]
+    },
+    {
+      "name": "jherrodthomas/robotics-skills-suite",
+      "url": "https://github.com/jherrodthomas/robotics-skills-suite",
+      "summary": "76 个开箱即用的 Claude 技能库，覆盖工业机器人安全合规自动化（ISO 标准），加速制造业 AI 落地",
+      "stars": 505,
+      "language": "",
+      "topics": [
+        "amr",
+        "anthropic",
+        "ce-marking",
+        "claude",
+        "claude-skills",
+        "cobot",
+        "fat-sat",
+        "functional-safety",
+        "iec62061",
+        "iec62443",
+        "industrial-robotics",
+        "iso10218",
+        "iso13849",
+        "iso15066",
+        "machinery-safety",
+        "nav2",
+        "ot-cybersecurity",
+        "robotics",
+        "ros2",
+        "urdf"
+      ]
+    },
+    {
+      "name": "JustLikeCheese/LGBT-Prompt",
+      "url": "https://github.com/JustLikeCheese/LGBT-Prompt",
+      "summary": "利用 AI 对弱势群体的同情偏向进行 Prompt 注入，突破安全限制的技术研究项目，涉及 AI 安全与对齐议题",
+      "stars": 436,
+      "language": "HTML",
+      "topics": [
+        "jailbreak",
+        "prompt"
+      ]
+    },
+    {
+      "name": "zarazhangrui/beautiful-html-templates",
+      "url": "https://github.com/zarazhangrui/beautiful-html-templates",
+      "summary": "专为 AI 编程 Agent 设计的 HTML 幻灯片模板库，让 Agent 能快速选用合适模板生成美观页面",
+      "stars": 433,
+      "language": "HTML",
+      "topics": []
+    },
+    {
+      "name": "thcp/stemdeck",
+      "url": "https://github.com/thcp/stemdeck",
+      "summary": "AI 驱动的人声/乐器分离提取平台，为音乐制作人和创作者提供智能分轨工具，基于深度学习音频处理",
+      "stars": 369,
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "joshawome/chainreason",
+      "url": "https://github.com/joshawome/chainreason",
+      "summary": "评估 LLM 在以太坊和 DeFi 任务上推理能力的基准测试，推动大模型在区块链领域的应用评估",
+      "stars": 345,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "butthtio/solidity-cot-auditor",
+      "url": "https://github.com/butthtio/solidity-cot-auditor",
+      "summary": "多角色思维链（Chain-of-Thought）LLM 流水线，专用于 Solidity 智能合约安全审计，提升代码审查效率",
+      "stars": 341,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "louisedesadeleer/clipify",
+      "url": "https://github.com/louisedesadeleer/clipify",
+      "summary": "Claude Code 技能插件：自动将长视频裁剪为适合社交媒体的短视频片段，AI 视频内容创作利器",
+      "stars": 293,
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "TQ-trade-agent/tq-trading-agent",
+      "url": "https://github.com/TQ-trade-agent/tq-trading-agent",
+      "summary": "AI 驱动的多 Agent 股票研究与量化交易系统，结合 LangChain/LangGraph 和 OpenAI 实现智能投资分析",
+      "stars": 292,
+      "language": "Vue",
+      "topics": [
+        "algorithmic-trading",
+        "financial-analysis",
+        "langchain",
+        "langgraph",
+        "openai",
+        "stock-research",
+        "trading-agent",
+        "trading-bot",
+        "typescript"
+      ]
+    },
+    {
+      "name": "fendouai/CodexSaver",
+      "url": "https://github.com/fendouai/CodexSaver",
+      "summary": "通过 DeepSeek 模型优化，在不降低输出质量的前提下降低 OpenAI Codex 的使用成本，API 省钱利器",
+      "stars": 273,
+      "language": "Python",
+      "topics": [
+        "codex",
+        "deepseek"
+      ]
+    }
+  ]
+}

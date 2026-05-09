@@ -1,0 +1,25 @@
+{
+  "title": "AstrBotDevs/AstrBot",
+  "url": "https://github.com/AstrBotDevs/AstrBot",
+  "source": "github-trending",
+  "popularity": 31658,
+  "summary": "AstrBot 是一个多平台 AI 聊天机器人开发框架，统一接入 QQ、Telegram、Discord、微信等即时通讯平台，内置插件系统和 MCP 协议支持。可作为 OpenClaw 的开源替代方案，适合需要自部署、可定制的 AI 助手场景。",
+  "highlights": [
+    "一个框架接入所有主流 IM 平台：QQ、Telegram、Discord、微信",
+    "MCP 协议支持，可接入外部工具扩展 Agent 能力",
+    "插件系统设计，功能模块化，社区可贡献扩展",
+    "Docker 一键部署，运维门槛低",
+    "OpenClaw 的开源替代方案，适合隐私敏感场景"
+  ],
+  "score": 6,
+  "score_reason": "AstrBot 在 '多平台 AI 聊天机器人' 这个细分赛道做得不错，插件机制和 MCP 支持显示出良好的架构前瞻性。给 6 分是因为这个赛道玩家众多，差异化不够明显。1K 的 open issue 相对于 2K fork 比例偏高，暗示维护压力较大。值得关注，但尚未形成壁垒。",
+  "tags": [
+    "聊天机器人",
+    "多平台",
+    "即时通讯",
+    "插件",
+    "MCP"
+  ],
+  "collected_at": "2026-05-09",
+  "stored_at": "2026-05-09T03:17:59Z"
+}

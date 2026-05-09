@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-ds4",
+  "title": "antirez/ds4 — 为 DeepSeek V4 Flash 打造的 Metal 原生推理引擎",
+  "source_url": "https://github.com/antirez/ds4",
+  "summary": "Redis 作者打造的 Metal 原生推理引擎，支持磁盘 KV 缓存和 2-bit 量化，Mac 本地运行 284B 模型",
+  "analysis": {
+    "score": 8,
+    "score_reason": "Redis 作者出品的工程精品，独创磁盘 KV 缓存架构，2-bit 量化 128GB Mac 可运行，对 Mac 用户本地推理价值极高",
+    "highlights": [
+      "14 天获 2627 stars，纯 C/Objective-C/Metal 实现，不依赖 llama.cpp，Mac Studio M3 Ultra q2 达 36.86 t/s 生成速度",
+      "支持 1M token 上下文窗口，独创磁盘 KV 缓存设计，将 KV cache 视为磁盘一级公民而非内存附属品",
+      "2-bit 非对称量化（仅 MoE 专家量化），可在 128GB MacBook 运行 284B 参数模型，API 兼容 OpenAI/Anthropic 协议"
+    ],
+    "tags": ["本地推理", "Apple Metal", "DeepSeek", "LLM 引擎"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

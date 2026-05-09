@@ -1,0 +1,18 @@
+{
+  "id": "2026-05-09-github-trending-tokenspeed",
+  "title": "lightseekorg/tokenspeed — 为 Blackwell GPU 优化的光速级推理引擎",
+  "source_url": "https://github.com/lightseekorg/tokenspeed",
+  "summary": "专为 Blackwell GPU 优化的推理引擎，目标超越 TensorRT-LLM，Kimi K2.5 性能已显优势",
+  "analysis": {
+    "score": 7,
+    "score_reason": "推理引擎领域强力竞争者，Kimi K2.5 性能超越 TensorRT-LLM 有亮点，但仍是 preview 阶段，生态远未成熟",
+    "highlights": [
+      "本地 SPMD 设计 + 静态编译器自动生成集合通信，用户无需手写并行逻辑，降低部署复杂度",
+      "拥有 Blackwell 上最快的 MLA（Multi-head Latent Attention）实现之一，适用于 Agent 工作负载",
+      "C++ 控制平面 + Python 执行平面，请求生命周期通过有限状态机编码，支持 SMG 集成 AsyncLLM"
+    ],
+    "tags": ["LLM 推理", "GPU 优化", "Blackwell", "MLA"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}

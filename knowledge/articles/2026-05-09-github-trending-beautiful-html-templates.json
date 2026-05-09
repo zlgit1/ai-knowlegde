@@ -1,0 +1,17 @@
+{
+  "id": "2026-05-09-github-trending-beautiful-html-templates",
+  "title": "zarazhangrui/beautiful-html-templates — 专为 AI 编程 Agent 优化的 HTML 幻灯片模板库",
+  "source_url": "https://github.com/zarazhangrui/beautiful-html-templates",
+  "summary": "专为 AI Agent（Claude Code/Cursor 等）输出场景设计的精美 HTML 模板集合",
+  "analysis": {
+    "score": 4,
+    "score_reason": "简单的模板集合（433 stars），技术含量低，缺乏创新，属于成熟领域增量改进",
+    "highlights": [
+      "433 stars，专为 AI Agent（Claude Code/Cursor 等）输出场景设计的 HTML 模板",
+      "模板风格美观，改善 AI 生成页面的视觉质量"
+    ],
+    "tags": ["HTML 模板", "AI Agent", "前端"]
+  },
+  "collected_at": "2026-05-09T12:00:00+08:00",
+  "status": "active"
+}
