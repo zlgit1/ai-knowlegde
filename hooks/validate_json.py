@@ -8,12 +8,12 @@ from pathlib import Path
 
 
 REQUIRED_FIELDS = {
-    "id": str,
+    "collected_at": str,
     "title": str,
-    "source_url": str,
+    "url": str,
     "summary": str,
     "tags": list,
-    "status": str,
+    "source": str,
 }
 
 VALID_STATUSES = {"draft", "review", "published", "archived"}
