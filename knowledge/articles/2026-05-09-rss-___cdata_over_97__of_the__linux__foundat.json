@@ -3,14 +3,14 @@
   "url": "https://techrights.org/n/2026/05/08/Over_97_of_the_Linux_Foundation_s_Budget_Goes_Not_to_Linux.shtml",
   "source": "rss",
   "popularity": 0,
-  "summary": "文章指出Linux基金会超过97%的预算并未用于Linux内核本身，而是投入到了其他项目和运营中，质疑了基金会的资金分配与使命一致性。",
+  "summary": "文章指出Linux基金会超过97%的预算并未用于Linux内核本身，而是投入到了其他项目和运营中，质疑其名称与资金分配之间的不匹配。",
   "highlights": [
     "Linux基金会97%以上的预算未直接用于Linux内核开发",
-    "资金被大量用于其他项目、营销和行政开支",
-    "引发对基金会资金使用透明度和优先级的讨论"
+    "基金会的资金分配与其名称所暗示的重点存在显著偏差",
+    "文章引发对基金会使命和资源分配合理性的讨论"
   ],
   "score": 7,
-  "score_reason": "文章提供了具体数据并引发重要讨论，但来源立场可能带有偏见，需结合多方信息评估。",
+  "score_reason": "文章提出了一个值得关注的数据点，但来源较为小众，且缺乏对基金会整体预算用途的全面分析，因此评分中等偏上。",
   "tags": [
     "Linux基金会",
     "预算分配",
@@ -19,6 +19,6 @@
   "language": null,
   "topics": [],
   "published_at": "Sat, 09 May 2026 03:21:06 +0000",
-  "collected_at": "2026-05-09T07:03:53Z",
-  "stored_at": "2026-05-09T07:04:12Z"
+  "collected_at": "2026-05-09T07:31:50Z",
+  "stored_at": "2026-05-09T07:33:07Z"
 }
