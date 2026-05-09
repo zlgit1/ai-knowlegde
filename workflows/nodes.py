@@ -13,10 +13,36 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from workflows.state import KBState
 from pipeline.model_client import get_provider, chat_with_retry
+from tests.cost_guard import CostGuard, BudgetExceededError
 
 
-def chat(prompt: str, system: str = "", **kwargs) -> tuple[str, dict]:
-    """发送 prompt 给 LLM，返回 (text, usage)。"""
+_COST_GUARD: CostGuard | None = None
+
+
+def get_cost_guard() -> CostGuard:
+    """获取全局 CostGuard 单例（懒加载）。"""
+    global _COST_GUARD
+    if _COST_GUARD is None:
+        budget = float(os.environ.get("BUDGET_YUAN", "1.0"))
+        _COST_GUARD = CostGuard(budget_yuan=budget)
+    return _COST_GUARD
+
+
+def chat(prompt: str, system: str = "", node_name: str = "unknown", **kwargs) -> tuple[str, dict]:
+    """发送 prompt 给 LLM，返回 (text, usage)。
+
+    Args:
+        prompt: 用户提示词。
+        system: 系统提示词（可选）。
+        node_name: 调用节点名称（用于成本追踪）。
+        **kwargs: 传递给 chat_with_retry 的额外参数。
+
+    Returns:
+        (response_text, usage_dict)
+
+    Raises:
+        BudgetExceededError: 当全局预算超限时。
+    """
     provider = get_provider()
     try:
         messages = []
@@ -25,23 +51,27 @@ def chat(prompt: str, system: str = "", **kwargs) -> tuple[str, dict]:
         messages.append({"role": "user", "content": prompt})
         temperature = kwargs.pop("temperature", 0.3)
         response = chat_with_retry(provider, messages, temperature=temperature)
-        return response.content, {
+        usage_dict = {
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,
             "total_tokens": response.usage.total_tokens,
         }
+        guard = get_cost_guard()
+        guard.record(node_name, usage_dict, provider.model)
+        guard.check()
+        return response.content, usage_dict
     finally:
         provider.close()
 
 
-def chat_json(prompt: str, system: str = "", **kwargs) -> tuple[Any, dict]:
+def chat_json(prompt: str, system: str = "", node_name: str = "unknown", **kwargs) -> tuple[Any, dict]:
     """发送 prompt 给 LLM 并解析 JSON 响应，返回 (parsed_json, usage)。"""
     sys_prompt = (
         (system + "\nYou must respond with valid JSON only, no other text.")
         if system else
         "You must respond with valid JSON only, no other text."
     )
-    text, usage = chat(prompt, system=sys_prompt, **kwargs)
+    text, usage = chat(prompt, system=sys_prompt, node_name=node_name, **kwargs)
     text = text.strip()
     if "```" in text:
         for part in text.split("```"):

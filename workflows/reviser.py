@@ -37,7 +37,10 @@ def revise_node(state: KBState) -> dict:
     )
 
     tracker = dict(state.get("cost_tracker", {}))
-    result, usage = chat_json(prompt, system=_REVISE_SYSTEM, temperature=0.4)
+    result, usage = chat_json(prompt, 
+                              system=_REVISE_SYSTEM, 
+                              temperature=0.4,
+                              node_name="revise")
     tracker = accumulate_usage(tracker, usage)
 
     improved = result if isinstance(result, list) else result.get("analyses", analyses)

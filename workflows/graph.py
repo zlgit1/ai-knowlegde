@@ -7,7 +7,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from langgraph.graph import END, StateGraph
 
 from workflows.human_flag import human_flag_node
-from workflows.nodes import analyze_node, collect_node, organize_node
+from workflows.collector import collect_node
+from workflows.nodes import analyze_node
+from workflows.organizer import organize_node
 from workflows.planner import planner_node
 from workflows.reviewer import review_node
 from workflows.reviser import revise_node
@@ -95,6 +97,8 @@ def print_node_output(step: str, state: KBState):
 
 
 if __name__ == "__main__":
+    from workflows.nodes import get_cost_guard, BudgetExceededError
+
     app = build_graph()
 
     initial_state: KBState = {
@@ -114,11 +118,23 @@ if __name__ == "__main__":
     print("=" * 60)
 
     full_state: KBState = dict(initial_state)
-    for update in app.stream(initial_state, stream_mode="updates"):
-        for node_name, node_output in update.items():
-            print(f"\n[{node_name}]")
-            full_state.update(node_output)
-            print_node_output(node_name, full_state)
+
+    try:
+        for update in app.stream(initial_state, stream_mode="updates"):
+            for node_name, node_output in update.items():
+                print(f"\n[{node_name}]")
+                full_state.update(node_output)
+                print_node_output(node_name, full_state)
+        print("\n=== 工作流完成 ===")
+    except BudgetExceededError as e:
+        print(f"\n[FATAL] 预算熔断触发：{e}")
+
+    # ★ 收尾打报告 · 落盘到 knowledge/cost-report.json
+    guard = get_cost_guard()
+    report = guard.get_report()
+    print(f"\n[CostGuard] 总调用 {report['total_calls']} 次 · 总成本 ¥{report['total_cost_yuan']}")
+    print(f"[CostGuard] 按节点：{report['cost_by_node']}")
+    guard.save_report()
 
     print("\n" + "=" * 60)
     print("执行完成")

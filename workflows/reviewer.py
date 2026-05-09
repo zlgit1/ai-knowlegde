@@ -79,6 +79,7 @@ def review_node(state: KBState) -> dict:
             prompt,
             system="你是严格但公正的知识库质量审核员。给出具体、可操作的反馈。",
             temperature=0.1,
+            node_name="reviewer",
         )
         tracker = accumulate_usage(tracker, usage)
 

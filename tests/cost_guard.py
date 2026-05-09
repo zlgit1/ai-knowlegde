@@ -3,8 +3,10 @@
 三重保护：成本追踪 (record) + 预警提醒 + 预算熔断 (BudgetExceededError)
 """
 
+import json
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 
@@ -103,6 +105,15 @@ class CostGuard:
             "budget_yuan": self.budget_yuan,
             "cost_by_node": {k: round(v, 6) for k, v in by_node.items()},
         }
+
+    def save_report(self, filepath: str | Path = "knowledge/cost-report.json") -> dict:
+        """获取报告并落盘到文件，同时返回报告 dict。"""
+        report = self.get_report()
+        path = Path(filepath)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"[CostGuard] 报告已保存到 {path}")
+        return report
 
 
 # --- 测试入口 ---
