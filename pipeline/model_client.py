@@ -89,7 +89,7 @@ class OpenAICompatibleProvider(LLMProvider):
         self._client.close()
 
 
-def get_provider(name: Optional[str] = None) -> OpenAICompatibleProvider:
+def create_provider(name: Optional[str] = None) -> OpenAICompatibleProvider:
     name = (name or os.environ.get("LLM_PROVIDER", "deepseek")).lower()
     config = _PROVIDER_CONFIG.get(name)
     if not config:
@@ -103,6 +103,10 @@ def get_provider(name: Optional[str] = None) -> OpenAICompatibleProvider:
         model=config["model"],
         api_key=api_key,
     )
+
+
+def get_provider(name: Optional[str] = None) -> OpenAICompatibleProvider:
+    return create_provider(name)
 
 
 def estimate_tokens(text: str) -> int:
