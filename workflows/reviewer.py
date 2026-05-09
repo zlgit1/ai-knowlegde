@@ -25,9 +25,19 @@ def review_node(state: KBState) -> dict:
     核心原则：只评估不修改（Evaluate, don't modify）。
     Reviewer 看到的是 Analyzer 输出的 analyses，不做任何改动，只给分 + 反馈。
     """
+    plan = state.get("plan", {}) or {}
+    max_iter = int(plan.get("max_iterations", 3))
     analyses = state.get("analyses", [])
     iteration = state.get("iteration", 0)
     tracker = state.get("cost_tracker", {})
+
+    if iteration >= max_iter:
+        print(f"[Reviewer] 已达最大迭代次数 ({max_iter})，强制通过")
+        return {
+            "review_passed": True,
+            "review_feedback": f"达到最大审核次数 ({max_iter})，自动放行",
+            "iteration": iteration + 1,
+        }
 
     if not analyses:
         return {

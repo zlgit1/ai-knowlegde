@@ -78,8 +78,10 @@ _GITHUB_API = "https://api.github.com/search/repositories"
 
 def collect_node(state: KBState) -> dict:
     """调用 GitHub Search API 采集 AI 相关仓库，返回部分状态更新。"""
-    print("[CollectNode] 开始采集 GitHub AI 仓库...")
-    url = f"{_GITHUB_API}?q={_COLLECT_QUERY}&per_page=10"
+    plan = state.get("plan", {}) or {}
+    limit = int(plan.get("per_source_limit", 10))
+    print(f"[CollectNode] 开始采集 GitHub AI 仓库 (per_page={limit})...")
+    url = f"{_GITHUB_API}?q={_COLLECT_QUERY}&per_page={limit}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/vnd.github.v3+json"})
     with urllib.request.urlopen(req, timeout=15) as resp:
         data = json.loads(resp.read().decode("utf-8"))
@@ -147,7 +149,9 @@ Output a JSON object with the same fields: title, url, summary, tags, score, lan
 
 def organize_node(state: KBState) -> dict:
     """过滤低分条目、按 URL 去重、有反馈时用 LLM 修正。"""
-    print("[OrganizeNode] 开始整理数据...")
+    plan = state.get("plan", {}) or {}
+    threshold = float(plan.get("relevance_threshold", 0.5))
+    print(f"[OrganizeNode] 开始整理数据 (threshold={threshold})...")
     analyses = state.get("analyses", [])
     feedback = state.get("review_feedback", "")
     tracker = dict(state.get("cost_tracker", {}))
@@ -158,7 +162,7 @@ def organize_node(state: KBState) -> dict:
     for item in analyses:
         score = item.get("score", 0)
         try:
-            if float(score) < 0.6:
+            if float(score) < threshold:
                 continue
         except (ValueError, TypeError):
             continue
