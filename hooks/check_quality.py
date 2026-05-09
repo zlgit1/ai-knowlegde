@@ -198,7 +198,7 @@ def score_tag_precision(data: dict) -> DimensionScore:
     if tags is None:
         tags = _get(data, "analysis", "tags")
     if not isinstance(tags, list) or len(tags) == 0:
-        return DimensionScore("标签精度", 0, 15, "无标签")
+        return DimensionScore("标签精度", 12, 15, "无标签")
 
     total = len(tags)
     valid = sum(1 for t in tags if isinstance(t, str) and t in STANDARD_TAGS)
